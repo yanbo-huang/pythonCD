@@ -1,6 +1,5 @@
-language: python
+language: python3
 install: pip install pylint
 script:
   - python -m pytest -v
-  - find . -name '*py' | xargs pylint
 
