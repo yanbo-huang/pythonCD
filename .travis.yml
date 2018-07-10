@@ -2,4 +2,5 @@ language: python
 install: pip install pylint
 script:
   - python -m pytest -v
-  - pylint
+  - find . -name '*py' | xargs pylint
+
